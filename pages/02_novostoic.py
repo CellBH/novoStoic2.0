@@ -605,8 +605,7 @@ def main():
             rxn_dict = parse_formula(stoic)
         st.subheader('Reaction lists in pathway design')
         save_sol_folder = './Results/novoStoic_solutions/' + str(p_prod)
-        pulp_solver = pulp.CPLEX_CMD(
-            path=None, keepFiles=0, mip=1, msg=1)
+        pulp_solver = pulp.HiGHS()
         use_direction = False
         novoStoic_minFlux_relaxedRule(
             rxn_dict, novel_metab, save_sol_folder, int(iterations), int(max_steps), pulp_solver, use_direction)
