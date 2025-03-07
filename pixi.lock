@@ -2290,7 +2290,7 @@ packages:
 - pypi: .
   name: novostoic2-0
   version: 0.1.0
-  sha256: 0b59300cbdbabbe5c564bca2a193cbc01cae706821a787da0f6d73298de3283e
+  sha256: a2fe9774a6cbc7e0b0f90703b76de5789f97b4b40a56ad9a05ab464f59e64c56
   requires_python: '>=3.11'
   editable: true
 - conda: https://conda.anaconda.org/conda-forge/linux-64/numpy-1.26.4-py311h64a7726_0.conda
