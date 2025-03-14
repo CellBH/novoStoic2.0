@@ -563,7 +563,7 @@ def optimal_stoic(reactant,product,add_info,min_int_val,max_int_val,ATP_input):
     lp_prob += stoi_vars[substrate] == -1, "substrate_input"
     lp_prob += stoi_vars[pdt[0]] >= 1, "product_output"
     #lp_prob += stoi_vars[substrate] >= -10
-    pulp_solver = pulp.CPLEX_CMD(path=None,keepFiles=0, mip=1, msg=1)
+    pulp_solver = pulp.HiGHS()
     #pulp_solver = pulp.CPLEX_CMD(path=None,keepFiles=0, mip=0, msg=1)
     lp_prob.solve(pulp_solver)
 

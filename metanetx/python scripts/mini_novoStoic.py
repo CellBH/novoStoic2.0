@@ -314,7 +314,7 @@ def test_isovalarate():
 #     path_to_cplex = '/Users/linuswang/Applications/IBM/ILOG/CPLEX_Studio1261/cplex/bin/x86-64_osx/cplex'
 #     pulp_solver = pulp.CPLEX_CMD(path=path_to_cplex,keepFiles=0, mip=1, msg=1)
 
-    pulp_solver = pulp.CPLEX_CMD(path=None,keepFiles=0, mip=1, msg=1)
+    pulp_solver = pulp.HiGHS()
     # pulp_solver = pulp.solvers.GUROBI_CMD()
     # pulp_solver = pulp.GLPK_CMD()
     # use_direction=True
